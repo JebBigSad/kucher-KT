@@ -1,0 +1,74 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 80px 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #4a3f35;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .card.reversed {
+    background: #3d4a34;
+  }
+  
+  .textBlock {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 24px;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .tags span {
+    padding: 6px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .textBlock p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    opacity: 0.9;
+  }
+  
+  .imageBlock {
+    position: relative;
+    min-height: 300px;
+  }
+  
+  .imageBlock img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .features {
+      padding: 48px 24px;
+      gap: 32px;
+    }
+    .card,
+    .card.reversed {
+      grid-template-columns: 1fr;
+    }
+    .textBlock {
+      padding: 24px;
+    }
+  }

@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 48px;
+    background: #1a1a1a;
+    color: #a0a0a0;
+    font-size: 0.85rem;
+  }
+  
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    color: #c9a86a;
+    letter-spacing: 2px;
+  }
+  
+  .links {
+    display: flex;
+    gap: 24px;
+  }
+  
+  .links a {
+    transition: color 0.2s;
+  }
+  
+  .links a:hover {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+  }

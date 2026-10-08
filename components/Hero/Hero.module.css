@@ -1,0 +1,99 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 48px 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+      url('/images/hero-bg.png') center / cover no-repeat;
+    color: #fff;
+  }
+  
+  .content {
+    max-width: 600px;
+  }
+  
+  .title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    max-width: 450px;
+  }
+  
+  .booking {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) auto;
+    gap: 16px;
+    padding: 24px 48px;
+    background: rgba(245, 243, 239, 0.95);
+    color: #1a1a1a;
+    align-items: end;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .field label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #4a3f35;
+  }
+  
+  .field input {
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid #c9a86a;
+    background: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+  }
+  
+  .cta {
+    padding: 14px 32px;
+    background: #3d4a34;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+  }
+  
+  .cta:hover {
+    background: #2e3826;
+  }
+  
+  @media (max-width: 768px) {
+    .hero {
+      padding: 100px 24px 280px;
+      min-height: auto;
+    }
+    .title {
+      font-size: 2.5rem;
+    }
+    .booking {
+      grid-template-columns: 1fr 1fr;
+      padding: 16px 24px;
+    }
+    .cta {
+      grid-column: span 2;
+    }
+  }
